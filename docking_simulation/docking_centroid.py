@@ -54,7 +54,7 @@ import time
 
 vpg = dc.dock.VinaPoseGenerator(pocket_finder=None)
 
-def dock(out: Path = "results", centroid: Optional[str] = None, box: Optional[str] = None, exhaustiveness: int = 26, num_modes: int = 30):
+def dock(out: Path = "results", centroid: Optional[str] = None, box: Optional[str] = None, exhaustiveness: int = 15, num_modes: int = 25):
     """Dock a ligand to a protein using the deepchem interface to AutoDock Vina
 
     Parameters
@@ -75,9 +75,41 @@ def dock(out: Path = "results", centroid: Optional[str] = None, box: Optional[st
         Number of docked structures, by default 20
     """
     CsAP2L1_centroid = [] 
-    CsAP2L1_centroid.append(np.array([  -3.134,   6.789,  -3.936]))
+    CsAP2L1_centroid.append(np.array([  10.720,  15.910, -13.490]))
+    CsAP2L1_centroid.append(np.array([  -14.993, -34.156, -25.767]))
+    CsAP2L1_centroid.append(np.array([  -8.482,  -7.515,   1.325]))
+    CsAP2L1_centroid.append(np.array([  -0.961,  -4.373,  -5.470]))
+    CsAP2L1_centroid.append(np.array([  -1.852,  -2.086,   1.031]))
+    CsAP2L1_centroid.append(np.array([  -4.599,   5.153,  -5.851]))
+    CsAP2L1_centroid.append(np.array([  -3.413,   2.465,  -2.817]))
+    CsAP2L1_centroid.append(np.array([  -11.478,   7.421,  -8.557]))
+    CsAP2L1_centroid.append(np.array([  -9.342,  12.249,  -4.366]))
+    CsAP2L1_centroid.append(np.array([  -0.622,   6.913,   2.897]))
+    CsAP2L1_centroid.append(np.array([  1.863,   6.028,  22.018]))
+    CsAP2L1_centroid.append(np.array([  18.586, -10.067,  -1.520]))
 
     CsWRKY1_centroid = []
+    #sWRKY1_centroid.append(np.array([  -33.193, -22.610,  31.789]))
+    #CsWRKY1_centroid.append(np.array([  -1.918,  36.886,   8.255]))
+    #CsWRKY1_centroid.append(np.array([  -3.999,  38.820, -41.432]))
+    #CsWRKY1_centroid.append(np.array([  -20.246,  16.499, -55.063]))
+    #CsWRKY1_centroid.append(np.array([  35.626,  -6.674, -54.139]))
+    #CsWRKY1_centroid.append(np.array([  8.323, -40.449, -20.743]))
+    #CsWRKY1_centroid.append(np.array([  -6.586, -29.827, -46.453]))
+    #CsWRKY1_centroid.append(np.array([  -14.427,   3.870, -23.045]))
+    #CsWRKY1_centroid.append(np.array([  -16.173,  14.154,  -7.521]))
+    #CsWRKY1_centroid.append(np.array([  -14.470,  13.710,  -6.267]))
+    #CsWRKY1_centroid.append(np.array([  -11.585,   8.348,  -2.961]))
+    #CsWRKY1_centroid.append(np.array([  -1.390,   4.242,  -4.586]))
+    #CsWRKY1_centroid.append(np.array([  2.562,  -5.871,  -2.014]))
+    #CsWRKY1_centroid.append(np.array([  -0.166,  -5.049,  -1.808]))
+    #CsWRKY1_centroid.append(np.array([  -0.886,   1.843,  -2.969]))
+    #CsWRKY1_centroid.append(np.array([  13.147,  -2.379,  11.962]))
+    #CsWRKY1_centroid.append(np.array([  32.755,   4.842,  18.688]))
+    #CsWRKY1_centroid.append(np.array([  6.606,  17.026,  28.291]))
+    #CsWRKY1_centroid.append(np.array([  15.443,   4.722,  68.874]))
+    #CsWRKY1_centroid.append(np.array([  36.185, -28.286,  15.014]))
+    #CsWRKY1_centroid.append(np.array([  27.414,  12.215,  -8.369]))
 
     CsMYB1_centroid = []
 
