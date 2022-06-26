@@ -75,21 +75,21 @@ def dock(out: Path = "results", centroid: Optional[str] = None, box: Optional[st
         Number of docked structures, by default 20
     """
     CsAP2L1_centroid = [] 
-    CsAP2L1_centroid.append(np.array([  10.720,  15.910, -13.490]))
-    CsAP2L1_centroid.append(np.array([  -14.993, -34.156, -25.767]))
-    CsAP2L1_centroid.append(np.array([  -8.482,  -7.515,   1.325]))
-    CsAP2L1_centroid.append(np.array([  -0.961,  -4.373,  -5.470]))
-    CsAP2L1_centroid.append(np.array([  -1.852,  -2.086,   1.031]))
-    CsAP2L1_centroid.append(np.array([  -4.599,   5.153,  -5.851]))
-    CsAP2L1_centroid.append(np.array([  -3.413,   2.465,  -2.817]))
-    CsAP2L1_centroid.append(np.array([  -11.478,   7.421,  -8.557]))
-    CsAP2L1_centroid.append(np.array([  -9.342,  12.249,  -4.366]))
-    CsAP2L1_centroid.append(np.array([  -0.622,   6.913,   2.897]))
-    CsAP2L1_centroid.append(np.array([  1.863,   6.028,  22.018]))
-    CsAP2L1_centroid.append(np.array([  18.586, -10.067,  -1.520]))
+    #CsAP2L1_centroid.append(np.array([  10.720,  15.910, -13.490]))
+    #CsAP2L1_centroid.append(np.array([  -14.993, -34.156, -25.767]))
+    #CsAP2L1_centroid.append(np.array([  -8.482,  -7.515,   1.325]))
+    #CsAP2L1_centroid.append(np.array([  -0.961,  -4.373,  -5.470]))
+    #CsAP2L1_centroid.append(np.array([  -1.852,  -2.086,   1.031]))
+    #CsAP2L1_centroid.append(np.array([  -4.599,   5.153,  -5.851]))
+    #CsAP2L1_centroid.append(np.array([  -3.413,   2.465,  -2.817]))
+    #CsAP2L1_centroid.append(np.array([  -11.478,   7.421,  -8.557]))
+    #CsAP2L1_centroid.append(np.array([  -9.342,  12.249,  -4.366]))
+    #CsAP2L1_centroid.append(np.array([  -0.622,   6.913,   2.897]))
+    #CsAP2L1_centroid.append(np.array([  1.863,   6.028,  22.018]))
+    #CsAP2L1_centroid.append(np.array([  18.586, -10.067,  -1.520]))
 
     CsWRKY1_centroid = []
-    #sWRKY1_centroid.append(np.array([  -33.193, -22.610,  31.789]))
+    #CsWRKY1_centroid.append(np.array([  -33.193, -22.610,  31.789]))
     #CsWRKY1_centroid.append(np.array([  -1.918,  36.886,   8.255]))
     #CsWRKY1_centroid.append(np.array([  -3.999,  38.820, -41.432]))
     #CsWRKY1_centroid.append(np.array([  -20.246,  16.499, -55.063]))
@@ -112,6 +112,21 @@ def dock(out: Path = "results", centroid: Optional[str] = None, box: Optional[st
     #CsWRKY1_centroid.append(np.array([  27.414,  12.215,  -8.369]))
 
     CsMYB1_centroid = []
+    CsMYB1_centroid.append(np.array([  -7.408,  -0.681,  25.932]))
+    CsMYB1_centroid.append(np.array([  -16.652,  -1.789,   6.646]))
+    CsMYB1_centroid.append(np.array([  -16.477,   6.640,  11.350]))
+    CsMYB1_centroid.append(np.array([  -10.452,   3.066,   2.600]))
+    CsMYB1_centroid.append(np.array([   1.346,   8.695, -12.928]))
+    CsMYB1_centroid.append(np.array([  5.631,   2.318,  -9.967]))
+    CsMYB1_centroid.append(np.array([  21.050,  -3.423, -29.860]))
+    CsMYB1_centroid.append(np.array([  50.948,  -5.380, -21.990]))
+    CsMYB1_centroid.append(np.array([  8.988, -38.763,   3.729]))
+    CsMYB1_centroid.append(np.array([  -48.934, -17.627,  10.812]))
+    CsMYB1_centroid.append(np.array([  -54.316,  17.365,  -5.925]))
+    CsMYB1_centroid.append(np.array([  -23.278,  47.989, -10.666]))
+    CsMYB1_centroid.append(np.array([  15.342,  38.486, -14.959]))
+    CsMYB1_centroid.append(np.array([  21.476,   7.051,  16.473]))
+    CsMYB1_centroid.append(np.array([  14.149, -18.830,  11.863]))
 
 
     centroids = {}
